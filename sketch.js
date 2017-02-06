@@ -82,7 +82,7 @@ this.render = function(){
 		strokeWeight(2);
 		ellipse(this.pivot.x,this.pivot.y,this.jointRadius/2,this.jointRadius/2);
 		ellipse(this.elbow.x,this.elbow.y,this.jointRadius/2,this.jointRadius/2);
-		if(this.isDragging) fill(255,0,0);
+		if(this.isDragging) fill(255,0,0); else fill(160);
 		ellipse(this.fist.x,this.fist.y,this.jointRadius,this.jointRadius);
 		
 	pop();
