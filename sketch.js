@@ -49,7 +49,7 @@ this.IKSolver = function(mX, mY){
 	var mult = 1;
 	if(mX<width/2) 
 		mult*=-1;
-	this.armAngle = atan(dif.y/dif.x) -acos(midDis/this.armLen)*mult;
+	this.armAngle = atan(dif.y/(dif.x+0.00001)) -acos(midDis/this.armLen)*mult;
 	
 	
 	
