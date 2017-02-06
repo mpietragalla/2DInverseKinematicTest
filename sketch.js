@@ -46,8 +46,10 @@ this.IKSolver = function(mX, mY){
 	var midDis = dis/2;
 	
 	this.midPoint = p5.Vector.add(this.pivot, dif.setMag(midDis));
-	
-	this.armAngle = atan(dif.y/dif.x) -acos(midDis/this.armLen);
+	var mult = 1;
+	if(mX<width/2) 
+		mult*=-1;
+	this.armAngle = atan(dif.y/dif.x) -acos(midDis/this.armLen)*mult;
 	
 	
 	
